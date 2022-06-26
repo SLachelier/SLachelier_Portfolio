@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("./assets/images/bg.png");
+    background-image: url("../images/bg.png");
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
@@ -161,6 +161,7 @@ img {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    flex: 1;
     color: lightgrey;
     margin-block: 3rem;
     width: 70%;
@@ -204,7 +205,7 @@ img {
         display: block;
         position: absolute;
         background-color: transparent;
-        background-image: url(/assets/images/icon-hamburger.svg);
+        background-image: url(/users/slach/UT_Bootcamp/SLachelier_Portfolio/assets/images/icon-hamburger.svg);
         background-repeat: no-repeat;
         width: 2rem;
         border: 0;
@@ -215,7 +216,7 @@ img {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url(/assets/images/icon-close.svg);
+        background-image: url(/users/slach/UT_Bootcamp/SLachelier_Portfolio/assets/images/icon-close.svg);
         z-index: 10000;
     }
 }
@@ -234,10 +235,20 @@ img {
     }
 }
 
-@media (min-width: 20em) {
+@media (min-width: 20em) and (max-width: 35em) {
         
     .glass {
-        width: 100%;
+        width: 100vw;
+        display: block;
+        margin-left: .2rem;
     }
+    .info {
+        width: 100vw;
+    }
+
+    .cards {
+        align-content: center;
+    }
+    
 }
 
