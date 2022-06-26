@@ -1,52 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shauna Lachelier</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
+</head>
 
-  <body>
+<body>
 
     <header>
+        <div class="header">
+            <img src="/assets/images/logo.svg" alt="Shauna Lachelier's portfolio logo" class="logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
         <nav>
-            <ul>
-                <li><a>About Me</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Contact</a></li>
+            <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+                <li class="active">
+                    <a class=" uppercase text-white letter-spacing-2" href="index.html">
+                        <span aria-hidden="true">{</span> Home <span aria-hidden="true">}</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" uppercase text-white letter-spacing-2" href="about.html">
+                        <span aria-hidden="true">{</span> About_Me <span aria-hidden="true">}</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" uppercase text-white letter-spacing-2" href="https://github.com/SLachelier">
+                        <span aria-hidden="true">{</span> GitHub <span aria-hidden="true">}</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" uppercase text-white letter-spacing-2" href="https://www.linkedin.com/in/shauna-lachelier-968982b5/">
+                        <span aria-hidden="true">{</span> LinkedIn <span aria-hidden="true">}</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" uppercase text-white letter-spacing-2" href="contact.html">
+                        <span aria-hidden="true">{</span> Contact <span aria-hidden="true">}</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <div class="hero">
-        <h1></h1>
-        <img/>
-        <div>
-            <p></p>
-            <button></button>
-        </div>
-    </div>
+    <main>
+        <section class="glass">
+            <div class="info">
+                <img src="./assets/images/image.jpg" alt="">
+                <h2>Shauna Lachelier</h2>
+                <h3>Web Developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius duis at consectetur lorem. Nascetur ridiculus mus mauris vitae. Metus dictum at tempor commodo ullamcorper a lacus vestibulum sed. Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. Ultricies lacus sed turpis tincidunt id aliquet risus feugiat. Pellentesque habitant morbi tristique senectus. Netus et malesuada fames ac turpis egestas sed tempus.
+                </p>
+                <br>
+                <a class="link" href="./resume.html">Resume</a>
+            </div>
+            <div class="cards">            
+                <div class="card">
+                    <img src="./assets/images/MegaBytes.png" alt="The MegaBytes Website">
+                    <div class="card-info">
+                        <h2><a class="link" href="https://slachelier.github.io/MegaBytes/" target="_blank">MegaBytes</a></h2>
+                        <p>An easy to use Restaurant Finder.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/run-buddy.png" alt="The Run Buddy website">
+                    <div class="card-info">
+                        <h2><a class="link" href="https://slachelier.github.io/run-buddy/" target="_blank">Run Buddy</a></h2>
+                        <p>Trainer matching for runners.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/taskmaster-pro.png" alt="Task managing website">
+                    <div class="card-info">
+                        <h2><a class="link" href="https://slachelier.github.io/taskmaster-pro/" target="_blank">Taskmaster Pro</a></h2>
+                        <p>A kanban style task manager.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/scheduler.png" alt="Workday scheduler website">
+                    <div class="card-info">
+                        <h2><a class="link" href="https://slachelier.github.io/wk5-challenge-slachelier/" target="_blank">Work Day Scheduler</a></h2>
+                        <p>An hourly schedule planner.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/generator.png" alt="Password generator website">
+                    <div class="card-info">
+                        <h2><a class="link" href="https://slachelier.github.io/wk3-challenge-slachelier/" target="_blank">Password Generator</a></h2>
+                        <p>A random password generating tool.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/quiz.png" alt="Quiz website">
+                    <div class="card-info">
+                        <h2><a class="link" href="https://slachelier.github.io/wk4-challenge-slachelier/" target="_blank">JavaScript Quiz</a></h2>
+                        <p>A timed quiz with a built-in points system</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <article>
-        <img/>
-        <h2></h2>
-        <p></p>
-    </article>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
 
-    <footer>
-        <h3></h3>
-        <p></p>
-        <button></button>
-    </footer>
-  </body>
+    <script src="/assets/js/script.js" defer></script>
+</body>
 </html>
