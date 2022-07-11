@@ -235,20 +235,25 @@ img {
     }
 }
 
-@media (min-width: 20em) and (max-width: 35em) {
+@media (min-width: 20em) and (max-width: 1253px) {
         
     .glass {
-        width: 100vw;
+        width: 100%;
         display: block;
         margin-left: .2rem;
     }
     .info {
-        width: 100vw;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 20px;
+        align-content: center;
     }
 
     .cards {
         align-content: center;
+        padding-left: 100px;
     }
     
 }
+
 
